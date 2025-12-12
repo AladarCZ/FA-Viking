@@ -1,0 +1,122 @@
+[
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-head",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": [
+      {
+        "name": "CombatOverhaul:Armor",
+        "propertiesByType": {
+          "fa-viking-head-vendel-steel-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 6,
+              "BluntAttack": 10
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.1,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-head-vendel*-steel-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 6,
+              "BluntAttack": 10
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.1,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-head-vendel*-*iron-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 5,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.1,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-head-vendel*-*iron-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 5,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.1,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          }
+        },
+      }
+    ]
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-head",
+    "op": "replace",
+    "path": "/durabilityByType",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": {
+        "fa-viking-head-vendel*-steel-*": 11000,
+        "fa-viking-head-vendel*-iron-*": 4400
+    }
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-head",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/protectionModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-head",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/statModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-head",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/class",
+    "value": "CombatOverhaul:WearableArmor"
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-head",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "add",
+    "path": "/attributes/materialCountByType",
+    "value": { "*-head-*": 8 }
+  },  
+
+]

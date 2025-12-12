@@ -1,0 +1,122 @@
+[
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-body",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": [
+      {
+        "name": "CombatOverhaul:Armor",
+        "propertiesByType": {
+          "fa-viking-body-steel-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 6,
+              "BluntAttack": 10
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": -0.2,
+              "steadyAim": -0.3,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-body-steel-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 6,
+              "BluntAttack": 10
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.03,
+              "manipulationSpeed": -0.2,
+              "steadyAim": -0.3,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-body-*iron-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 5,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": -0.2,
+              "steadyAim": -0.3,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-body-*iron-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 5,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.03,
+              "manipulationSpeed": -0.2,
+              "steadyAim": -0.3,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-body",
+    "op": "replace",
+    "path": "/durabilityByType",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": {
+        "fa-viking-body-steel-*": 33000,
+        "fa-viking-body-iron-*": 13200
+    }
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-body",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/protectionModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-body",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/statModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-body",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/class",
+    "value": "CombatOverhaul:WearableArmor"
+  },
+  {
+    "file": "faviking:itemtypes/wearable/viking/fa-viking-body",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "add",
+    "path": "/attributes/materialCountByType",
+    "value": { "*-body-*": 16 }
+  },  
+
+]

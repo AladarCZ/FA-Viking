@@ -1,0 +1,120 @@
+{
+	"code": "fa-viking-legs",
+	"class": "ItemWearable",
+	"heldTpIdleAnimation": "holdunderarm",
+	"variantgroups": [
+		{ "code": "metallegs",  "states": ["iron", "steel"]},
+		{ "code": "line",  "states": ["none","bear-black","bear-brown","bear-polar"]}
+	],
+	"allowedVariants": [
+		"*"
+	],
+	"shapeByType": 
+	{
+		"fa-viking-legs-*bear*": { "base": "entity/armor/viking/vikingbearlegs" },
+		"fa-viking-legs-*": { "base": "entity/armor/viking/vikinglegs" }
+	},
+	"texturesByType": {
+		"fa-viking-legs-*bear*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"vikinglegs": { "base": "armor/entity/viking_{metallegs}" },
+			"line": { "base": "game:entity/humanoid/serapharmor/hide/bear/{line}" }
+				},
+		"fa-viking-legs-*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"vikinglegs": { "base": "armor/entity/viking_{metallegs}" },
+			"line": { "base": "block/lines/line{line}" }
+				}
+	},
+	"storageFlags": 128,
+	"maxstacksize": 4,
+	"attributes": {
+		"handbook": { 
+			"groupBy":["fa-viking-legs-{metallegs}-*"]
+		},
+		"visibleDamageEffect": true,
+		"wearableAttachment": true,
+		"clothescategoryByType": {
+			"*": "armorlegs"
+		},
+		"warmthByType": {
+			"*-bear-black": 1.5,
+			"*-bear-brown": 1.5,
+			"*-bear-polar": 2,
+			"*": 1
+		},
+		"defaultProtLoss": {
+			perTierRelativeProtectionLoss: [0.03, 0.15],
+			perTierFlatDamageReductionLoss: [0.1, 0.2],
+		},
+		"protectionModifiersByType": {
+			"*-steel-*": {
+				relativeProtection: 0.97,
+				flatDamageReduction: 2.5,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*-iron-*": {
+				relativeProtection: 0.96,
+				flatDamageReduction: 2.35,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+
+		},
+		"statModifiersByType": {
+			"*bear*": {
+				rangedWeaponsAcc: -0.10,
+				rangedWeaponsSpeed: -0.20,
+				walkSpeed: -0.11,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			},
+			"*": {
+				rangedWeaponsAcc: -0.10,
+				rangedWeaponsSpeed: -0.20,
+				walkSpeed: -0.09,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			}
+		}
+	},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryviking": ["*"] },
+	"renderAlphaTest": 0.25,
+	"durabilityByType": {
+		"*-iron-*": 2700,
+		"*-steel-*": 6000
+	},
+	"fpHandTransformByType": {
+		"*": {
+			translation: { x: 0.4, y: -1.2, z: -0.5 },
+			rotation: { x: 163, y: -111, z: -180 },
+			origin: { x: 0.5, y: 1.6, z: 0.5 },
+			scale: 2.15
+		},
+	},
+	"tpHandTransformByType": {
+		"*": {
+			translation: { x: -0.7, y: -0.6, z: -0.4 },
+			rotation: { x: 95, y: -20, z: -91 },
+			origin: { x: 0.5, y: 0.7, z: 0.5 },
+			scale: 0.74
+		}
+	},
+	"guiTransformByType": {
+		"*": {
+			translation: { x: 1, y: 0, z: 0 },
+			rotation: { x: -26, y: -46, z: -180 },
+			origin: { x: 0.5, y: 0.6, z: 0.5 },
+			scale: 1.25
+		},
+	},
+	"groundTransformByType": {
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 0, y: 0, z: 90 },
+			origin: { x: 0.34, y: 1.12, z: 0.5 },
+			scale: 3.1
+		}
+	}
+}

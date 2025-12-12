@@ -1,0 +1,132 @@
+{
+	"code": "fa-viking-head",
+	"class": "ItemWearable",
+	"heldTpIdleAnimation": "holdunderarm",
+	"variantgroups": [
+		{ "code": "style",  "states": ["vendel"]},
+		{ "code": "metalhead",  "states": ["iron", "steel"]},
+		{ "code": "plume",  "states": ["none", "bear-black", "bear-brown", "bear-polar"]}
+	],
+	"behaviors": [
+		{ name: "GroundStorable", properties: { layout: 'Quadrants', collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.3, z2: 1 } } }
+	],
+	"allowedVariants": [
+		"*"
+	],
+	"shapeByType": 
+	{
+		"fa-viking-head-vendel-*bear*": { "base": "entity/armor/viking/vikingbearhead" },
+		"fa-viking-head-vendel-*": { "base": "entity/armor/viking/vikinghead" }
+	},
+	"texturesByType": {
+		"fa-viking-head-vendel-*bear*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"vikinghead": { "base": "armor/entity/viking_{metalhead}" },
+			"plume": { "base": "game:entity/humanoid/serapharmor/hide/bear/{plume}" }
+				},
+		"fa-viking-head-vendel*-*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"vikinghead": { "base": "armor/entity/viking_{metalhead}" },
+			"plume": { "base": "block/plume/plume{plume}" }
+				}
+	},
+	"storageFlags": 128,
+	"maxstacksize": 4,
+	"attributes": {
+		"handbook": { 
+			"groupBy":["fa-viking-head-{style}-{metalhead}-*"]
+		},
+		"visibleDamageEffect": true,
+		"wearableAttachment": true,
+		"clothescategoryByType": {
+			"*": "armorhead"
+		},
+		"warmthByType": {
+			"*-bear-black": 1.5,
+			"*-bear-brown": 1.5,
+			"*-bear-polar": 2,
+			"*": 1
+		},
+		"disableElementsByType": {
+			"*": ["hidehat", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "hidefacialhair", "sidehigh", "sidelow", "bangs"]
+		},
+		"defaultProtLoss": {
+			perTierRelativeProtectionLoss: [0.03, 0.15],
+			perTierFlatDamageReductionLoss: [0.1, 0.2],
+		},
+		"protectionModifiersByType": {
+			"*-steel-*": {
+				relativeProtection: 0.97,
+				flatDamageReduction: 2.5,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*-iron-*": {
+				relativeProtection: 0.96,
+				flatDamageReduction: 2.35,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+
+		},
+		"statModifiersByType": {
+			"*bear*": {
+				rangedWeaponsAcc: -0.10,
+				rangedWeaponsSpeed: -0.20,
+				walkSpeed: -0.11,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			},
+			"*": {
+				rangedWeaponsAcc: -0.10,
+				rangedWeaponsSpeed: -0.20,
+				walkSpeed: -0.09,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			}
+		},
+    	"groundStorageTransform": {
+      		translation: { x: -1.7, y: -1.31, z: 1.45 },
+      		rotation: { x: 0, y: 39, z: -11 },
+      		origin: { x: 0.5, y: -10, z: 0.5 }
+    	}
+	},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryviking": ["*"] },
+	"renderAlphaTest": 0.25,
+	"durabilityByType": {
+		"*-iron-*": 2700,
+		"*-steel-*": 6000
+	},
+	"fpHandTransformByType": {
+		"*": {
+			translation: { x: 0.4, y: -1.9, z: -0.5 },
+			rotation: { x: 163, y: -111, z: -180 },
+			origin: { x: 0.5, y: 1.7, z: 0.5 },
+			scale: 2.15
+		},
+	},
+	"tpHandTransformByType": {
+		"*": {
+			translation: { x: -0.82, y: -2.2, z: -0.5 },
+			rotation: { x: 18, y: 169, z: 30 },
+			origin: { x: 0.5, y: 1.7, z: 0.5 },
+			scale: 0.64
+		}
+	},
+	"guiTransformByType": {
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -26, y: -46, z: -180 },
+			origin: { x: 0.6, y: 1.72, z: 0.5 },
+			scale: 2
+		},
+	},
+	"groundTransformByType": {
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 0, y: 0, z: 0 },
+			origin: { x: 0.34, y: 1.71, z: 0.5 },
+			scale: 3.1
+		}
+	}
+}
