@@ -8,7 +8,7 @@
       {
         "name": "CombatOverhaul:Armor",
         "propertiesByType": {
-          "fa-viking-legs-steel-*bear*": {
+          "fa-viking-legs-steel-heavy-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Legs", "Feet"],
             "Resists": {
@@ -25,7 +25,7 @@
               "hungerrate": 0.06
             }
           },
-          "fa-viking-legs-steel-*": {
+          "fa-viking-legs-steel-heavy*": {
             "Layers": ["Outer"],
             "Zones": ["Legs", "Feet"],
             "Resists": {
@@ -42,7 +42,7 @@
               "hungerrate": 0.08
             }
           },
-          "fa-viking-legs-*iron-*bear*": {
+          "fa-viking-legs-*iron-heavy-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Legs", "Feet"],
             "Resists": {
@@ -59,13 +59,81 @@
               "hungerrate": 0.08
             }
           },
-          "fa-viking-legs-*iron-*": {
+          "fa-viking-legs-*iron-heavy*": {
             "Layers": ["Outer"],
             "Zones": ["Legs", "Feet"],
             "Resists": {
               "PiercingAttack": 7,
               "SlashingAttack": 5,
               "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.08
+            }
+          },
+          "fa-viking-legs-steel-light-*bear*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 9,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.12,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.04,
+              "hungerrate": 0.06
+            }
+          },
+          "fa-viking-legs-steel-light*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 9,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.08
+            }
+          },
+          "fa-viking-legs-*iron-light-*bear*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 8,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.12,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.08
+            }
+          },
+          "fa-viking-legs-*iron-light*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 8,
+              "BluntAttack": 6
             },
             "FlatReduction": {},
             "PlayerStats": {
@@ -86,8 +154,12 @@
     "path": "/durabilityByType",
     "dependsOn": [{ "modId": "combatoverhaul" }],
     "value": {
-        "fa-viking-legs-steel-*": 22000,
-        "fa-viking-legs-iron-*": 8800
+        "*steel*heavy*": 33000,
+        "*meteoric*heavy*": 13200,
+        "*iron*heavy*": 13200,
+        "*steel*light*": 33000,
+        "*meteoric*light*": 13200,
+        "*iron*light*": 13200
     }
   },
   {

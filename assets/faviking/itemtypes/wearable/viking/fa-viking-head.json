@@ -57,37 +57,37 @@
 			perTierFlatDamageReductionLoss: [0.1, 0.2],
 		},
 		"protectionModifiersByType": {
-			"*vendel*steel*": {
+			"*steel*vendel*": {
 				relativeProtection: 0.97,
 				flatDamageReduction: 2.5,
 				highDamageTierResistant: true,
 				protectionTier: 4
 			},
-			"*vendel*meteoric*": {
+			"*meteoric*vendel*": {
 				relativeProtection: 0.965,
 				flatDamageReduction: 2.4,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*vendel*iron*": {
+			"*iron*vendel*": {
 				relativeProtection: 0.96,
 				flatDamageReduction: 2.35,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*vendelgjermundbu*steel*": {
+			"*steel*gjermundbu*": {
 				relativeProtection: 0.92,
 				flatDamageReduction: 2.6,
 				highDamageTierResistant: true,
 				protectionTier: 4
 			},
-			"*vendelgjermundbu*meteoric*": {
+			"*meteoric*gjermundbu*": {
 				relativeProtection: 0.91,
 				flatDamageReduction: 2.55,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*vendelgjermundbu*iron*": {
+			"*iron*gjermundbu*": {
 				relativeProtection: 0.91,
 				flatDamageReduction: 2.5,
 				highDamageTierResistant: true,
@@ -109,14 +109,14 @@
 				healingeffectivness: -0.26,
 				hungerrate: 0.15
 			},
-			"*vendelgjermundbu*bear*": {
+			"*gjermundbu*bear*": {
 				rangedWeaponsAcc: -0.1,
 				rangedWeaponsSpeed: -0.2,
 				walkSpeed: -0.07,
 				healingeffectivness: -0.06,
 				hungerrate: 0.06
 			},
-			"*vendelgjermundbu*": {
+			"*gjermundbu*": {
 				rangedWeaponsAcc: -0.1,
 				rangedWeaponsSpeed: -0.2,
 				walkSpeed: -0.05,
@@ -133,12 +133,12 @@
 	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryviking": ["*"] },
 	"renderAlphaTest": 0.25,
 	"durabilityByType": {
-		"*vendel*iron*": 2700,
-		"*vendel*meteoric*": 4000,
-		"*vendel*steel*": 6000,
-		"*vendelgjermundbu*iron*": 2700,
-		"*vendelgjermundbu*meteoric*": 4000,
-		"*vendelgjermundbu*steel*": 6000
+		"*iron*vendel*": 2700,
+		"*meteoric*vendel*": 4000,
+		"*steel*vendel*": 6000,
+		"*iron*gjermundbu*": 2700,
+		"*meteoric*gjermundbu*": 4000,
+		"*steel*gjermundbu*": 6000
 	},
 	"fpHandTransformByType": {
 		"*": {

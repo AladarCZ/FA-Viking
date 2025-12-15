@@ -49,37 +49,37 @@
 			perTierFlatDamageReductionLoss: [0.1, 0.2],
 		},
 		"protectionModifiersByType": {
-			"*heavy*steel*": {
+			"*steel*heavy*": {
 				relativeProtection: 0.97,
 				flatDamageReduction: 2.5,
 				highDamageTierResistant: true,
 				protectionTier: 4
 			},
-			"*heavy*meteoric*": {
+			"*meteoric*heavy*": {
 				relativeProtection: 0.965,
 				flatDamageReduction: 2.4,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*heavy*iron*": {
+			"*iron*heavy*": {
 				relativeProtection: 0.96,
 				flatDamageReduction: 2.35,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*light*steel*": {
+			"*steel*light*": {
 				relativeProtection: 0.92,
 				flatDamageReduction: 2.6,
 				highDamageTierResistant: true,
 				protectionTier: 4
 			},
-			"*light*meteoric*": {
+			"*meteoric*light*": {
 				relativeProtection: 0.91,
 				flatDamageReduction: 2.55,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*light*iron*": {
+			"*iron*light*": {
 				relativeProtection: 0.91,
 				flatDamageReduction: 2.5,
 				highDamageTierResistant: true,
@@ -120,12 +120,12 @@
 	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryviking": ["*"] },
 	"renderAlphaTest": 0.25,
 	"durabilityByType": {
-		"*heavy*iron*": 2700,
-		"*heavy*meteoric*": 4000,
-		"*heavy*steel*": 6000,
-		"*light*iron*": 2700,
-		"*light*meteoric*": 4000,
-		"*light*steel*": 6000
+		"*iron*heavy*": 2700,
+		"*meteoric*heavy*": 4000,
+		"*steel*heavy*": 6000,
+		"*iron*light*": 2700,
+		"*meteoric*light*": 4000,
+		"*steel*light*": 6000
 	},
 	"fpHandTransformByType": {
 		"*": {

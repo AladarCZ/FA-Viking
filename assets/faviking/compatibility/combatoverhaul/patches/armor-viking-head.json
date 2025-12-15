@@ -8,7 +8,7 @@
       {
         "name": "CombatOverhaul:Armor",
         "propertiesByType": {
-          "fa-viking-head-vendel-steel-*bear*": {
+          "fa-viking-head-steel-vendel-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
@@ -25,7 +25,7 @@
               "hungerrate": 0.12
             }
           },
-          "fa-viking-head-vendel*-steel-*": {
+          "fa-viking-head-steel-vendel*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
@@ -42,7 +42,7 @@
               "hungerrate": 0.12
             }
           },
-          "fa-viking-head-vendel*-*iron-*bear*": {
+          "fa-viking-head-*iron-vendel-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
@@ -59,13 +59,81 @@
               "hungerrate": 0.12
             }
           },
-          "fa-viking-head-vendel*-*iron-*": {
+          "fa-viking-head-*iron-vendel*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
               "PiercingAttack": 7,
               "SlashingAttack": 5,
               "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.1,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-head-steel-gjermundbu-*bear*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 9,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.1,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-head-steel-gjermundbu*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 9,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.1,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-head-*iron-gjermundbu-*bear*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 8,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.1,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.12
+            }
+          },
+          "fa-viking-head-*iron-gjermundbu*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 8,
+              "BluntAttack": 6
             },
             "FlatReduction": {},
             "PlayerStats": {
@@ -76,7 +144,7 @@
               "hungerrate": 0.12
             }
           }
-        },
+        }
       }
     ]
   },
@@ -86,8 +154,12 @@
     "path": "/durabilityByType",
     "dependsOn": [{ "modId": "combatoverhaul" }],
     "value": {
-        "fa-viking-head-vendel*-steel-*": 11000,
-        "fa-viking-head-vendel*-iron-*": 4400
+        "*steel*vendel*": 11000,
+        "*meteoriciron*vendel*": 11000,
+        "*iron*vendel*": 4400,
+        "*steel*gjermundbu*": 11000,
+        "*meteoriciron*gjermundbu*": 11000,
+        "*iron*gjermundbu*": 4400
     }
   },
   {

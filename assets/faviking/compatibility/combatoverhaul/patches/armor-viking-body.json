@@ -8,7 +8,7 @@
       {
         "name": "CombatOverhaul:Armor",
         "propertiesByType": {
-          "fa-viking-body-steel-*bear*": {
+          "fa-viking-body-steel-heavy-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Torso", "Arms", "Hands"],
             "Resists": {
@@ -25,7 +25,8 @@
               "hungerrate": 0.12
             }
           },
-          "fa-viking-body-steel-*": {
+
+          "fa-viking-body-steel-heavy-*": {
             "Layers": ["Outer"],
             "Zones": ["Torso", "Arms", "Hands"],
             "Resists": {
@@ -42,7 +43,8 @@
               "hungerrate": 0.12
             }
           },
-          "fa-viking-body-*iron-*bear*": {
+
+          "fa-viking-body-*iron-heavy-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Torso", "Arms", "Hands"],
             "Resists": {
@@ -59,7 +61,8 @@
               "hungerrate": 0.12
             }
           },
-          "fa-viking-body-*iron-*": {
+
+          "fa-viking-body-*iron-heavy-*": {
             "Layers": ["Outer"],
             "Zones": ["Torso", "Arms", "Hands"],
             "Resists": {
@@ -74,6 +77,78 @@
               "steadyAim": -0.3,
               "healingeffectivness": -0.09,
               "hungerrate": 0.12
+            }
+          },
+
+          "fa-viking-body-steel-light-*bear*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 9,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.06,
+              "manipulationSpeed": -0.08,
+              "steadyAim": -0.2,
+              "healingeffectivness": -0.08,
+              "hungerrate": 0.10
+            }
+          },
+
+          "fa-viking-body-steel-light-*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 9,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.08,
+              "steadyAim": -0.2,
+              "healingeffectivness": -0.08,
+              "hungerrate": 0.10
+            }
+          },
+
+          "fa-viking-body-*iron-light-*bear*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 8,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.06,
+              "manipulationSpeed": -0.08,
+              "steadyAim": -0.2,
+              "healingeffectivness": -0.08,
+              "hungerrate": 0.10
+            }
+          },
+
+          "fa-viking-body-*iron-light-*": {
+            "Layers": ["Outer","Middle"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 8,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.08,
+              "steadyAim": -0.2,
+              "healingeffectivness": -0.08,
+              "hungerrate": 0.10
             }
           }
         }
@@ -86,8 +161,12 @@
     "path": "/durabilityByType",
     "dependsOn": [{ "modId": "combatoverhaul" }],
     "value": {
-        "fa-viking-body-steel-*": 33000,
-        "fa-viking-body-iron-*": 13200
+        "*steel*heavy*": 33000,
+        "*meteoric*heavy*": 13200,
+        "*iron*heavy*": 13200,
+        "*steel*light*": 33000,
+        "*meteoric*light*": 13200,
+        "*iron*light*": 13200
     }
   },
   {
