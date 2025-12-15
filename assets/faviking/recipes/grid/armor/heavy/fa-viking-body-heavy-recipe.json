@@ -129,7 +129,7 @@
 				]
 			},
 			"E": { type: "item", 
-					code: "fa-viking-body-*-none",
+					code: "fa-viking-body-*-heavy-none",
 					name: "metal",
 					allowedVariants: [
 					"iron",
@@ -145,7 +145,7 @@
 		width: 2,
 		height: 2,
 		name: "gothi plate sallet",
-		output: { type: "item", code: "fa-viking-body-{metal}-bear-{bear}"
+		output: { type: "item", code: "fa-viking-body-{metal}-heavy-bear-{bear}"
 		}
 	},
 	{

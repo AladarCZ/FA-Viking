@@ -129,7 +129,7 @@
 				]
 			},
 			"E": { type: "item", 
-					code: "fa-viking-legs-*-none",
+					code: "fa-viking-legs-*-heavy-none",
 					name: "metal",
 					allowedVariants: [
 					"iron",
@@ -145,7 +145,7 @@
 		width: 2,
 		height: 2,
 		name: "viking plate bear legs",
-		output: { type: "item", code: "fa-viking-legs-{metal}-bear-{bear}"
+		output: { type: "item", code: "fa-viking-legs-{metal}-heavy-bear-{bear}"
 		}
 	},
 	{

@@ -1,13 +1,13 @@
 [
 	{
-		ingredientPattern: "B_B,DED,GHI",
+		ingredientPattern: "_D_,BEB,GHI",
 		recipeGroup: 1,
 		ingredients: {
 			"B": { type: "item", code: "game:metalnailsandstrips-steel", quantity: 2
 			},
 			"D": { type: "item", code: "game:metalplate-steel"
 			},
-			"E": { type: "item", code: "game:armor-head-plate-steel"
+			"E": { type: "item", code: "game:armor-head-scale-steel"
 			},
 			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
 			},
@@ -18,19 +18,42 @@
 		},
 		width: 3,
 		height: 3,
-		name: "viking steel plate vendel",
-		output: { type: "item", code: "fa-viking-head-vendel-steel-none"
+		name: "viking steel plate gjermundbu",
+		output: { type: "item", code: "fa-viking-head-gjermundbu-steel-none"
 		}
 	},
 	{
-		ingredientPattern: "B_B,DED,GHI",
+		ingredientPattern: "_D_,BEB,GHI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "game:metalnailsandstrips-meteoriciron", quantity: 2
+			},
+			"D": { type: "item", code: "game:metalplate-meteoriciron"
+			},
+			"E": { type: "item", code: "game:armor-head-scale-meteoriciron"
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"H": { type: "item", code: "fa-viking-schematic", returnedStack: { "type": "item", "code": "fa-viking-schematic" }
+			},
+			"I": { type: "item", code: "game:hide-pelt-large"
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "viking steel meteoriciron gjermundbu",
+		output: { type: "item", code: "fa-viking-head-gjermundbu-meteoriciron-none"
+		}
+	},
+	{
+		ingredientPattern: "_D_,BEB,GHI",
 		recipeGroup: 1,
 		ingredients: {
 			"B": { type: "item", code: "game:metalnailsandstrips-iron", quantity: 2
 			},
 			"D": { type: "item", code: "game:metalplate-iron"
 			},
-			"E": { type: "item", code: "game:armor-head-plate-iron"
+			"E": { type: "item", code: "game:armor-head-scale-iron"
 			},
 			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
 			},
@@ -41,46 +64,49 @@
 		},
 		width: 3,
 		height: 3,
-		name: "viking iron plate vendel",
-		output: { type: "item", code: "fa-viking-head-vendel-iron-none"
+		name: "viking iron plate gjermundbu",
+		output: { type: "item", code: "fa-viking-head-gjermundbu-iron-none"
 		}
 	},
 	{
-		ingredientPattern: "BCD,_A_",
+		ingredientPattern: "BAB,_E_,_G_",
 		recipeGroup: 1,
 		ingredients: {
-			"A": { type: "item", code: "fa-viking-head-vendel*-steel-*"
+			"A": { type: "item", 
+					code: "game:cloth-*", 
+					name: "color", 
+					allowedVariants: [
+					"plain",
+					"blue",
+					"red",
+					"yellow",
+					"green",
+					"purple",
+					"pink",
+					"orange",
+					"brown",
+					"gray",
+					"black",
+					"white"
+				], quantity: 6
 			},
-			"B": { type: "item", code: "game:wrench-*", isTool: true, toolDurabilityCost: 100
+			"B": { type: "item", code: "game:cloth-plain",  quantity: 2
 			},
-			"C": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 100
+			"E": { type: "item", code: "fa-viking-head-*-gjermundbu-none",
+					name: "metal", 
+					allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
 			},
-			"D": { type: "item", code: "game:shears-*", isTool: true, toolDurabilityCost: 100
-			},
+			"G": { type: "item", code: "game:shears-*", isTool: true, toolDurabilityCost: 100
+			}
 		},
 		width: 3,
-		height: 2,
-		name: "viking steel plate vendel deplume",
-		output: { type: "item", code: "fa-viking-head-vendel-steel-none"
-		}
-	},
-	{
-		ingredientPattern: "BCD,_A_",
-		recipeGroup: 1,
-		ingredients: {
-			"A": { type: "item", code: "fa-viking-head-vendel*-iron-*"
-			},
-			"B": { type: "item", code: "game:wrench-*", isTool: true, toolDurabilityCost: 100
-			},
-			"C": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 100
-			},
-			"D": { type: "item", code: "game:shears-*", isTool: true, toolDurabilityCost: 100
-			},
-		},
-		width: 3,
-		height: 2,
-		name: "viking meteoriciron plate vendel deplume",
-		output: { type: "item", code: "fa-viking-head-vendel-iron-none"
+		height: 3,
+		name: "viking gjermundbu color",
+		output: { type: "item", code: "fa-viking-head-{metal}-gjermundbu-{color}"
 		}
 	},
 	{
@@ -97,10 +123,11 @@
 				]
 			},
 			"E": { type: "item", 
-					code: "fa-viking-head-vendel-*-none",
+					code: "fa-viking-head-*-gjermundbu-none",
 					name: "metal",
 					allowedVariants: [
 					"iron",
+					"meteoriciron",
 					"steel"
 				]
 			},
@@ -112,7 +139,7 @@
 		width: 2,
 		height: 2,
 		name: "gothi plate sallet",
-		output: { type: "item", code: "fa-viking-head-vendel-{metal}-bear-{bear}"
+		output: { type: "item", code: "fa-viking-head-{metal}-gjermundbu-bear-{bear}"
 		}
 	}
 ]
