@@ -21,7 +21,7 @@
 		width: 3,
 		height: 3,
 		name: "viking steel plate legs",
-		output: { type: "item", code: "fa-viking-legs-steel-none"
+		output: { type: "item", code: "fa-viking-legs-steel-heavy-none"
 		}
 	},
 	{
@@ -46,7 +46,7 @@
 		width: 3,
 		height: 3,
 		name: "viking meteoriciron plate legs",
-		output: { type: "item", code: "fa-viking-legs-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-legs-meteoriciron-heavy-none"
 		}
 	},
 	{
@@ -71,7 +71,7 @@
 		width: 3,
 		height: 3,
 		name: "viking iron plate legs",
-		output: { type: "item", code: "fa-viking-legs-iron-none"
+		output: { type: "item", code: "fa-viking-legs-iron-heavy-none"
 		}
 	},
 	{
@@ -164,7 +164,7 @@
 		width: 3,
 		height: 2,
 		name: "viking steel plate armet deplume",
-		output: { type: "item", code: "fa-viking-legs-steel-none"
+		output: { type: "item", code: "fa-viking-legs-steel-heavy-none"
 		}
 	},
 	{
@@ -183,7 +183,7 @@
 		width: 3,
 		height: 2,
 		name: "viking meteoriciron plate armet deplume",
-		output: { type: "item", code: "fa-viking-legs-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-legs-meteoriciron-heavy-none"
 		}
 	},
 	{
@@ -202,7 +202,7 @@
 		width: 3,
 		height: 2,
 		name: "viking meteoriciron plate armet deplume",
-		output: { type: "item", code: "fa-viking-legs-iron-none"
+		output: { type: "item", code: "fa-viking-legs-iron-heavy-none"
 		}
 	}
 ]

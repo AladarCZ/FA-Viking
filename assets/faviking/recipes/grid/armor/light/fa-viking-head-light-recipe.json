@@ -19,7 +19,7 @@
 		width: 3,
 		height: 3,
 		name: "viking steel plate gjermundbu",
-		output: { type: "item", code: "fa-viking-head-gjermundbu-steel-none"
+		output: { type: "item", code: "fa-viking-head-steel-gjermundbu-none"
 		}
 	},
 	{
@@ -42,7 +42,7 @@
 		width: 3,
 		height: 3,
 		name: "viking steel meteoriciron gjermundbu",
-		output: { type: "item", code: "fa-viking-head-gjermundbu-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-head-meteoriciron-gjermundbu-none"
 		}
 	},
 	{
@@ -65,7 +65,7 @@
 		width: 3,
 		height: 3,
 		name: "viking iron plate gjermundbu",
-		output: { type: "item", code: "fa-viking-head-gjermundbu-iron-none"
+		output: { type: "item", code: "fa-viking-head-iron-gjermundbu-none"
 		}
 	},
 	{

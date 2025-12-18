@@ -19,7 +19,7 @@
 		width: 3,
 		height: 3,
 		name: "viking steel plate legs",
-		output: { type: "item", code: "fa-viking-legs-steel-none"
+		output: { type: "item", code: "fa-viking-legs-steel-light-none"
 		}
 	},
 	{
@@ -42,7 +42,7 @@
 		width: 3,
 		height: 3,
 		name: "viking meteoriciron plate legs",
-		output: { type: "item", code: "fa-viking-legs-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-legs-meteoriciron-light-none"
 		}
 	},
 	{
@@ -65,7 +65,7 @@
 		width: 3,
 		height: 3,
 		name: "viking iron plate legs",
-		output: { type: "item", code: "fa-viking-legs-iron-none"
+		output: { type: "item", code: "fa-viking-legs-iron-light-none"
 		}
 	},
 	{
@@ -139,7 +139,7 @@
 		width: 2,
 		height: 2,
 		name: "viking plate bear legs",
-		output: { type: "item", code: "fa-viking-legs-{metal}-bear-{bear}"
+		output: { type: "item", code: "fa-viking-legs-{metal}-light-bear-{bear}"
 		}
 	}
 ]

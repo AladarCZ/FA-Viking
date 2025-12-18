@@ -21,7 +21,7 @@
 		width: 3,
 		height: 3,
 		name: "viking steel plate body",
-		output: { type: "item", code: "fa-viking-body-steel-none"
+		output: { type: "item", code: "fa-viking-body-steel-heavy-none"
 		}
 	},
 	{
@@ -46,7 +46,7 @@
 		width: 3,
 		height: 3,
 		name: "viking meteoriciron plate body",
-		output: { type: "item", code: "fa-viking-body-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-body-meteoriciron-heavy-none"
 		}
 	},
 	{
@@ -71,7 +71,7 @@
 		width: 3,
 		height: 3,
 		name: "viking iron plate body",
-		output: { type: "item", code: "fa-viking-body-iron-none"
+		output: { type: "item", code: "fa-viking-body-iron-heavy-none"
 		}
 	},
 	{
@@ -164,7 +164,7 @@
 		width: 3,
 		height: 2,
 		name: "viking steel plate head deplume",
-		output: { type: "item", code: "fa-viking-body-steel-none"
+		output: { type: "item", code: "fa-viking-body-steel-heavy-none"
 		}
 	},
 	{
@@ -183,7 +183,7 @@
 		width: 3,
 		height: 2,
 		name: "viking meteoriciron plate deplume",
-		output: { type: "item", code: "fa-viking-body-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-body-meteoriciron-heavy-none"
 		}
 	},
 	{
@@ -202,7 +202,7 @@
 		width: 3,
 		height: 2,
 		name: "viking steel plate sallet deplume",
-		output: { type: "item", code: "fa-viking-body-iron-none"
+		output: { type: "item", code: "fa-viking-body-iron-heavy-none"
 		}
 	}
 ]

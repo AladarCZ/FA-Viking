@@ -19,7 +19,7 @@
 		width: 3,
 		height: 3,
 		name: "viking steel plate vendel",
-		output: { type: "item", code: "fa-viking-head-vendel-steel-none"
+		output: { type: "item", code: "fa-viking-head-steel-vendel-none"
 		}
 	},
 	{
@@ -42,7 +42,7 @@
 		width: 3,
 		height: 3,
 		name: "viking steel meteoriciron vendel",
-		output: { type: "item", code: "fa-viking-head-vendel-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-head-meteoriciron-vendel-none"
 		}
 	},
 	{
@@ -65,7 +65,7 @@
 		width: 3,
 		height: 3,
 		name: "viking iron plate vendel",
-		output: { type: "item", code: "fa-viking-head-vendel-iron-none"
+		output: { type: "item", code: "fa-viking-head-iron-vendel-none"
 		}
 	},
 	{
@@ -139,7 +139,7 @@
 		width: 2,
 		height: 2,
 		name: "gothi plate sallet",
-		output: { type: "item", code: "fa-viking-head-vendel-{metal}-heavy-bear-{bear}"
+		output: { type: "item", code: "fa-viking-head-{metal}-vendel-bear-{bear}"
 		}
 	},
 	{
@@ -158,7 +158,7 @@
 		width: 3,
 		height: 2,
 		name: "viking steel plate vendel deplume",
-		output: { type: "item", code: "fa-viking-head-vendel-steel-none"
+		output: { type: "item", code: "fa-viking-head-vendel-steel-vendel-none"
 		}
 	},
 	{
@@ -177,7 +177,7 @@
 		width: 3,
 		height: 2,
 		name: "viking meteoriciron plate vendel deplume",
-		output: { type: "item", code: "fa-viking-head-vendel-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-head-vendel-meteoriciron-vendel-none"
 		}
 	},
 	{
@@ -196,7 +196,7 @@
 		width: 3,
 		height: 2,
 		name: "viking meteoriciron plate vendel deplume",
-		output: { type: "item", code: "fa-viking-head-vendel-iron-none"
+		output: { type: "item", code: "fa-viking-head-iron-vendel-none"
 		}
 	}
 ]

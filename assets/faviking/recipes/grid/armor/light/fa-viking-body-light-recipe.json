@@ -19,7 +19,7 @@
 		width: 3,
 		height: 3,
 		name: "viking steel plate body",
-		output: { type: "item", code: "fa-viking-body-steel-none"
+		output: { type: "item", code: "fa-viking-body-steel-light-none"
 		}
 	},
 	{
@@ -42,7 +42,7 @@
 		width: 3,
 		height: 3,
 		name: "viking meteoriciron plate body",
-		output: { type: "item", code: "fa-viking-body-meteoriciron-none"
+		output: { type: "item", code: "fa-viking-body-meteoriciron-light-none"
 		}
 	},
 	{
@@ -65,7 +65,7 @@
 		width: 3,
 		height: 3,
 		name: "viking iron plate body",
-		output: { type: "item", code: "fa-viking-body-iron-none"
+		output: { type: "item", code: "fa-viking-body-iron-light-none"
 		}
 	},
 	{
